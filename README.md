@@ -420,8 +420,10 @@ velero schedule get
 # Pausar/reanudar
 velero schedule pause backup-diario
 velero schedule unpause backup-diario
-```
 
+#Lanzar un backup programado en un scheduler
+velero backup create --from-schedule backup-ingress-nginx-diario
+```
 ### 6.3 Backup con Hooks
 
 ```yaml
