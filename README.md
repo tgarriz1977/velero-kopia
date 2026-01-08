@@ -453,6 +453,12 @@ velero schedule create backup-sigma2-staging-diario \
     --include-namespaces sigma2-staging \
     --default-volumes-to-fs-backup \
     --ttl 168h
+
+velero schedule create backup-ingress-nginx-diario \
+    --schedule="45 5 * * *" \
+    --include-namespaces ingress-nginx \
+    --default-volumes-to-fs-backup \
+    --ttl 168h
 ```
 ---
 
